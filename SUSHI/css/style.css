@@ -184,7 +184,8 @@ header .btn {
 .p-categories .box-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
   flex-wrap: wrap;
   margin-top: 1rem;
 }
