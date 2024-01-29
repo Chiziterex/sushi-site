@@ -210,7 +210,7 @@ header .btn {
 }
 
 .p-categories .box-container .box:hover {
-  transform: scale(1.25);
+  transform: scale(1.1);
 }
 
 .p-categories .box-container .box img {
