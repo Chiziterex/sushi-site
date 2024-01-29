@@ -51,7 +51,7 @@ header div:nth-child(1) p span {
   color: #fff;
   text-transform: uppercase;
   border-radius: 5px;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 header .navbar {
@@ -207,7 +207,7 @@ header .btn {
   padding: 1.5rem 2rem;
   border-radius: 1.2rem;
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
   box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3);
 }
