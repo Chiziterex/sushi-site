@@ -40,13 +40,16 @@ header {
 
 header div:nth-child(1) p {
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
   font-weight: 900;
 }
 
 header div:nth-child(1) p span {
   background-color: rgb(57, 214, 75);
-  padding:0 0.2rem;
+  padding: 0 0.4rem;
   color: #fff;
+  text-transform: uppercase;
   border-radius: 5px;
   font-size: 1.75rem;
 }
@@ -528,17 +531,21 @@ header .btn {
 }
 
 .footer .box-container div{
-  flex:1  ;
+  flex: 1;
 }
 
 .footer .box-container div:nth-child(1) h1{
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
-.footer .box-container div:nth-child(1) h1 span{
+.footer .box-container div:nth-child(1) h1 span {
   background-color: rgb(57, 214, 75);
-  padding: 0 0.3rem;
+  padding: 0 0.4rem;
   color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
   border-radius: 5px;
   font-size: 1.5rem;
 }
