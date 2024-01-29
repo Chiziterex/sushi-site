@@ -197,17 +197,24 @@ header .btn {
 }
 
 .p-categories .box-container .box {
-  flex:1 1 1 30rem;
-  position:relative;
+  flex: 1 1 1 30rem;
+  position: relative;
   background-color: #fff;
   padding: 1.5rem 2rem;
   border-radius: 1.2rem;
+  display: flex;
+  justify-content: center;
   box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3);
+}
+
+.p-categories .box-container .box:hover {
+  transform: scale(1.25);
 }
 
 .p-categories .box-container .box img {
   border-radius: 50%;
   width: 100px;
+  border: 1px solid rgb(0, 0, 0, 0.25);
   height: 100px;
   object-fit: cover;
 }
