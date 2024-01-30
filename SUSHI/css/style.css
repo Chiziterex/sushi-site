@@ -14,6 +14,7 @@
   outline: none;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  transition: all .15s ease;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-padding-top: 6rem;
-  background-color: rgb(246, 246, 250);
+  background-color: rgb(239 239 241);
 }
 
 header {
@@ -39,15 +40,18 @@ header {
 
 header div:nth-child(1) p {
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
   font-weight: 900;
 }
 
 header div:nth-child(1) p span {
   background-color: rgb(57, 214, 75);
-  padding:0 0.2rem;
+  padding: 0 0.4rem;
   color: #fff;
+  text-transform: uppercase;
   border-radius: 5px;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 header .navbar {
@@ -57,17 +61,23 @@ header .navbar {
   list-style: none;
   font-size: 1rem;
   font-weight: 700;
-  gap: 0.75rem;
+  gap: 1.5rem;
   text-transform: capitalize;
   transition: all 0.6s linear;
 }
 
 header .navbar a {
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 700;
   text-decoration: none;
   color: #000;
+  opacity: .5;
   cursor: pointer;
+}
+
+header .navbar a:hover {
+  transform: scale(1.25);
+  opacity: 1;
 }
 
 header div:nth-child(3) {
@@ -155,8 +165,7 @@ header .btn {
 
 .home .image img {
   height: 60vh;
-  width: 25vw;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* popular categories */
@@ -169,6 +178,7 @@ header .btn {
 .p-categories p {
   color: rgb(255, 0, 0);
   text-transform: uppercase;
+  opacity: 50%;
   text-align: center;
   font-size: 0.85rem;
   font-weight: 600;
@@ -184,23 +194,32 @@ header .btn {
 .p-categories .box-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
   flex-wrap: wrap;
   margin-top: 1rem;
 }
 
 .p-categories .box-container .box {
-  flex:1 1 1 30rem;
-  position:relative;
+  flex: 1 1 1 30rem;
+  position: relative;
   background-color: #fff;
   padding: 1.5rem 2rem;
   border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3);
+}
+
+.p-categories .box-container .box:hover {
+  transform: scale(1.1);
 }
 
 .p-categories .box-container .box img {
   border-radius: 50%;
   width: 100px;
+  border: 1px solid rgb(0, 0, 0, 0.25);
   height: 100px;
   object-fit: cover;
 }
@@ -219,12 +238,14 @@ header .btn {
 
 .special-dishes {
   display: flex;
+  margin-top: 2rem;
   flex-direction: column;
   padding: 35px 9%;
 }
 
 .special-dishes #spec-d {
   color: rgb(255, 0, 0);
+  opacity: 50%;
   text-transform: uppercase;
   text-align: left;
   font-size: 0.85rem;
@@ -355,8 +376,7 @@ header .btn {
 
 .say_about_us .image img {
   height: 60vh;
-  width: 25vw;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .say_about_us .text {
@@ -511,17 +531,21 @@ header .btn {
 }
 
 .footer .box-container div{
-  flex:1  ;
+  flex: 1;
 }
 
 .footer .box-container div:nth-child(1) h1{
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
-.footer .box-container div:nth-child(1) h1 span{
+.footer .box-container div:nth-child(1) h1 span {
   background-color: rgb(57, 214, 75);
-  padding: 0 0.3rem;
+  padding: 0 0.4rem;
   color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
   border-radius: 5px;
   font-size: 1.5rem;
 }
